@@ -1,0 +1,11 @@
+.git
+.gitignore
+.nojekyll
+*.log
+*.zip
+backup/
+backups/
+hts-cache/
+docker-compose*.yml
+Dockerfile
+README.md

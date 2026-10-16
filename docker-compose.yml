@@ -1,0 +1,10 @@
+services:
+  marsa-app:
+    build:
+      context: .
+    container_name: marsa-app
+    restart: unless-stopped
+    ports:
+      - "8004:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
