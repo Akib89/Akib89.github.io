@@ -94,6 +94,16 @@
     .skill:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line); }
     .skill strong { display: block; margin-bottom: 7px; font-size: 17px; }
     .skill span { color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .skill.creative {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      align-items: center;
+      gap: 22px;
+      padding: 18px 0 0;
+      border-bottom: 0;
+    }
+    .skill.creative img { width: 112px; height: 82px; border-radius: 12px; object-fit: cover; }
 
     .contact { padding-top: 0; }
     .contact-box { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; padding: clamp(34px, 6vw, 72px); border-radius: 24px; color: #fff; background: var(--accent); }
@@ -130,6 +140,8 @@
       .project-card img { aspect-ratio: 16 / 10; }
       .skill-list { grid-template-columns: 1fr; }
       .skill:nth-child(even) { padding-left: 0; border-left: 0; }
+      .skill.creative { grid-template-columns: 88px 1fr; padding-top: 20px; }
+      .skill.creative img { width: 88px; height: 76px; }
       .footer-inner { flex-direction: column; }
     }
   </style>
@@ -206,6 +218,10 @@
           <div class="skill"><strong>Frontend</strong><span>JavaScript, TypeScript, React, Vue, HTML, CSS</span></div>
           <div class="skill"><strong>Data</strong><span>PostgreSQL, MySQL, Redis, schema and query design</span></div>
           <div class="skill"><strong>Delivery</strong><span>Docker, Nginx, performance tuning, deployment</span></div>
+          <div class="skill creative">
+            <img src="assets/home/ChatGPT Image Oct 15, 2026, 01_17_58 PM-4.png" alt="Camera and creative editing workspace" loading="lazy">
+            <div><strong>Photo, Video &amp; Editing</strong><span>Photo and video shoots, photo retouching, video editing, color work, and visual design using Photoshop, Lightroom, Premiere Pro, After Effects, and Canva.</span></div>
+          </div>
         </div>
       </div>
     </section>
