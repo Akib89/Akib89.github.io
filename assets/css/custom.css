@@ -25,6 +25,15 @@
     color: aliceblue;
 }
 
+/* Keep the light logo visible on the projects page. */
+.vlt-is--work-asymmetric-01 .vlt-navbar--main {
+    background-color: #101010 !important;
+}
+
+.vlt-is--work-asymmetric-01 .vlt-navbar--main .vlt-menu-burger {
+    color: #fff !important;
+}
+
 .nav-addr {
     padding-bottom: 30px;
 }
