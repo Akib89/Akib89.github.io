@@ -643,3 +643,26 @@ html {
 .portfolio-page-section > .vlt-page-content {
     background-color: #fff;
 }
+
+/* Company logos in the About page image grid. */
+.company-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    padding: 44px;
+    background-color: #fff;
+}
+
+.company-logo-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 767px) {
+    .company-logo-card {
+        height: 240px;
+        padding: 32px;
+    }
+}
