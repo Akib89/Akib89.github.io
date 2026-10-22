@@ -66,7 +66,7 @@ Edit the root HTML pages or files under `assets/`, test locally, then commit and
 
 ## Contact Form
 
-GitHub Pages cannot execute PHP. The contact form validates the existing fields and opens the visitor's configured email application with a prepared message addressed to the portfolio email. It does not send mail directly from the website.
+GitHub Pages cannot execute PHP. The contact form submits through FormSubmit and delivers messages to the portfolio email without opening the visitor's email application. The recipient must confirm the activation email sent by FormSubmit after the first submission.
 
 ## Current Limitation
 

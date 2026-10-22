@@ -8701,3 +8701,14 @@ dl dd {
 [class^="socicon-"]::before, [class*=" socicon-"]::before {
     font-family: 'Socicon' !important;
 }
+/* Reliable navigation arrows */
+.vlt-nav--offcanvas__navigation ul.sf-menu > li > a::after,
+.vlt-nav--slide__navigation ul.sf-menu > li > a::after,
+.vlt-nav--fullscreen__navigation ul.sf-menu li > a::after {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    content: '\2197';
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    opacity: 1;
+}

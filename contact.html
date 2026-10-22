@@ -168,7 +168,9 @@
 				<div class="container position-relative">
 					<!--Particle image--><img class="vlt-particle" src="assets/img/root/square-plus-pattern.png" data-animation-id="fadeInUp" alt="" style="position: absolute; top: -140px; right: -120px; max-width: 232px; --animate-delay: .5s;" loading="lazy">
 					<!--Contact form-->
-					<form class="vlt-contact-form vlt-contact-form--style-1 has-extra-light-gray-background-color" id="myForm" novalidate="novalidate" data-recipient="raiyanamd89@gmail.com">
+					<form class="vlt-contact-form vlt-contact-form--style-1 has-extra-light-gray-background-color" id="myForm" action="https://formsubmit.co/raiyanamd89@gmail.com" method="POST" novalidate="novalidate">
+						<input type="hidden" name="_template" value="table">
+						<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none;">
 						<div class="vlt-form-row two-col">
 							<div class="vlt-form-group">
 								<input class="vlt-form-control" type="text" id="name" name="name" required="required">
@@ -179,22 +181,16 @@
 								<label class="vlt-form-label">Email address*</label>
 							</div>
 						</div>
-						<div class="vlt-form-row two-col">
-							<div class="vlt-form-group">
-								<input class="vlt-form-control" type="text" name="phone" id="phone" required="required">
-								<label class="vlt-form-label">Phone number*</label>
-							</div>
-							<div class="vlt-form-group">
-								<input class="vlt-form-control" type="text" id="url" name="url">
-								<label class="vlt-form-label">Project URL (optional)</label>
-							</div>
+						<div class="vlt-form-group">
+							<input class="vlt-form-control" type="text" name="phone" id="phone" required="required">
+							<label class="vlt-form-label">Phone number*</label>
 						</div>
 						<div class="vlt-form-group">
 							<input class="vlt-form-control" type="text" id="subject" name="subject" required="required">
 							<label class="vlt-form-label">Subject*</label>
 						</div>
 						<div class="vlt-form-group">
-							<textarea class="vlt-form-control" id="body" name="body" rows="5" required="required"></textarea>
+							<textarea class="vlt-form-control" id="body" name="message" rows="5" required="required"></textarea>
 							<label class="vlt-form-label">Message*</label>
 						</div>
 						 <div class="message success">Message Sent Successfully</div>
